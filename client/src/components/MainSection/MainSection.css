@@ -1,0 +1,150 @@
+.mainContainer {
+  margin-left: 19rem;
+  margin-top: 4rem;
+  /* border: 1px solid #ff0000; */
+}
+.mainWrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 100vh;
+  /* border: 1px solid black; */
+}
+.mainWrapper > h1{
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+.add-btn{
+    background-color: #577BFA;
+    border: none;
+    font: inherit;
+    padding: 10px 16px;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items:center ;
+    gap: 5px;
+}
+.employeeHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.emp-count{
+    color: #B3B4C0;
+}
+.searchBox {
+  background-color: #ecedf6;
+  height: 2rem;
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 12px;
+  border-radius: 8px;
+}
+.searchBox > input {
+  background-color: transparent;
+  font: inherit;
+  border: none;
+  width: 100%;
+  font-size: 0.9rem;
+}
+.searchBox > input::placeholder{
+    color: #B3B4C0;
+}
+.searchBox > input:focus {
+  outline: none;
+}
+.employees {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 25px;
+}
+
+.card-component {
+  background-color: white;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.card-inner {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-component:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.profileImage {
+  display: grid;
+  place-items: center;
+}
+.profileImage > img {
+  width: 7rem;
+  height: 7rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.emp-detail {
+  margin-top: 3rem;
+  text-align: center;
+}
+.emp-detail > h3{
+    color: #373852;
+}
+.emp-detail > p{
+    margin-top: 5px;
+    color: #B3B4C0;
+    font-size: 0.8rem;
+}
+.job-role {
+  background-color: #fcfbfe;
+  height: 3rem;
+  color: black;
+  width: max-content;
+  border-top: 1px solid rgba(112, 112, 112, 0.1);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  
+}
+.dropdownContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    position: relative;
+  }
+  .dropdownContainer > svg {
+    background-color: #fcfbfe;
+    padding: 0.5rem;
+    border-radius: 1rem;
+  }
+  .dropdown{
+    position: absolute;
+    top: 2rem;
+    width: 8rem;
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.dropdown > li{
+  list-style: none;
+  padding: 4px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border-radius: 5px;
+}
+.dropdown > li:hover{
+  background-color: #f4f5fb;
+}

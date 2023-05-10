@@ -1,0 +1,67 @@
+.modalContainer{
+    background: rgba(0, 0, 0, 0.6);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: 1s ease-in-out;
+}
+.modalBox{
+    width: 40rem;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.modalHeader, .modalFooter{
+    background-color: #fcfbfe;
+    height: 5rem;
+    display: grid;
+    place-items: center;
+}
+.modalFooter{
+    margin-top: 15px;
+}
+.modalHeader >h2{
+    font-size: 1.2rem;
+}
+.modalInner{
+    padding: 2rem;
+    
+}
+.input-box{
+   display: flex;
+   flex-direction: column;
+   margin-top: 10px;
+   width: 100%;
+}
+label{
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.input-box > input{
+    background-color: transparent;
+  font: inherit;
+  border: none;
+  font-size: 0.9rem;
+  background-color: #ecedf6;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,.1);
+  margin-top: 10px;
+}
+.input-box > input:focus{
+    outline: none;
+}

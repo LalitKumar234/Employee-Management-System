@@ -1,0 +1,43 @@
+POST http://localhost:3100/employee
+Content-Type: application/json
+
+
+{
+    "firstname": "Lafeffelit",
+    "lastname": "frece",
+    "email": "fcdfdvdfcfsdd@fgbc.co",
+    "phone": "97857854784",
+    "job": "iaua",
+    "dateofjoining": "12-08-1212",
+    "image": "lalalsl"
+
+    
+    
+}
+###
+GET http://localhost:3100/searchemployee/Vicky
+Content-Type: application/json
+###
+GET http://localhost:3100/employee
+Content-Type: application/json
+
+###
+PUT http://localhost:3100/employee/6458fd4ae6755a5884ed13ba
+Content-Type: application/json
+
+
+{
+    "name": "lalit@23414554",
+    "email": "1357",
+    "phone": "7209134395",
+    "status": "InActive"
+}
+
+###
+
+DELETE http://localhost:3100/employee/6458fcaf72d10b1a680c7a1b
+Content-Type: application/json
+
+# {
+#     "id": "6458f9cf26c7513a3e757a57",
+# }
